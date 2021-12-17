@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+    function finalGrade(exam, projects) {
+        if (exam > 90 || projects > 10) {
+            return 100;
+        } else if (exam > 75 && projects >= 5) {
+            return 90;
+        } else if (exam > 50 && projects >= 2) {
+            return 75;
+        }
+        return 0;
+    }
+
+    debugger;
+    console.log(finalGrade());
+</script>
+</body>
+</html>
