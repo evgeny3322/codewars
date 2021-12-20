@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<!--Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.-->
+
+<!--moveZeros([false,1,0,1,2,0,1,3,"a"]) // returns[false,1,1,2,1,3,"a",0,0]-->
+<script>
+    var moveZeros = function (arr) {
+        var result = arr.filter(function (num) {
+            return num !== 0;
+        });
+        var zeros = arr.filter(function (num) {
+            return num === 0;
+        });
+        return result.concat(zeros);
+    }
+</script>
+</body>
+</html>
