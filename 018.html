@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--Given a string, capitalize the letters that occupy even indexes and odd indexes separately, and return as shown below. Index 0 will be considered even.-->
+
+<!--For example, capitalize("abcdef") = ['AbCdEf', 'aBcDeF']. See test cases for more examples.-->
+
+<!--The input will be a lowercase string with no spaces.-->
+
+<!--Good luck!-->
+
+<!--If you like this Kata, please try:-->
+
+<script>
+    function capitalize(s){
+        return [0,1].map(r=>[...s].map((c,i)=>i%2===r?c.toUpperCase():c).join(''));
+    };
+</script>
+</body>
+</html>

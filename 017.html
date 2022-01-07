@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--Given a string of binary numbers of length 3 sort the numbers in ascending order but only order the even numbers and leave all odd numbers in their place.-->
+
+<!--Example:-->
+
+<!--evenBinary("101 111 100 001 010") // returns "101 111 010 001 100"-->
+
+<script>
+    function evenBinary(n) {
+        var even=(n.match(/\d\d0/g)||[]).sort(),i=0
+        return n.replace(/\d\d0/g,x=>even[i++])
+    }
+</script>
+</body>
+</html>
