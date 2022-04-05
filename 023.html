@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--Given an array of integers your solution should find the smallest integer.-->
+
+<!--For example:-->
+
+<!--Given [34, 15, 88, 2] your solution will return 2-->
+<!--Given [34, -345, -1, 100] your solution will return -345-->
+<!--You can assume, for the purpose of this kata, that the supplied array will not be empty.-->
+
+<script>
+
+
+    class SmallestIntegerFinder {
+        findSmallestInt(args) {
+            let max = args[0];
+            for (let i = 0; i < args.length; i++) {
+                if (args[i] < max) max = args[i];
+            }
+            return max;
+        }
+    }
+
+
+</script>
+</body>
+</html>
